@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="A minimal, accessible starter index page." />
+    <title>Home — My Site</title>
+
+    <!-- Styles (create styles.css in same folder) -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header role="banner" class="site-header">
+        <div class="container">
+            <h1 class="site-title">My Site</h1>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" role="main" class="container">
+        <section aria-labelledby="welcome">
+            <h2 id="welcome">Welcome</h2>
+            <p>This is a minimal, accessible HTML5 starter page you can build on.</p>
+        </section>
+
+        <section aria-labelledby="features" class="features">
+            <h3 id="features">Features</h3>
+            <ul>
+                <li>Responsive meta tag</li>
+                <li>Semantic, accessible markup</li>
+                <li>External CSS and deferred JS</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="get-started" class="cta">
+            <h3 id="get-started">Get started</h3>
+            <p>Create <code>styles.css</code> and <code>main.js</code> in this folder to add styling and behavior.</p>
+        </section>
+    </main>
+
+    <footer role="contentinfo" class="site-footer container">
+        <p>&copy; <span id="year"></span> My Site</p>
+    </footer>
+
+    <!-- Main script (create main.js in same folder) -->
+    <script src="main.js" defer></script>
+
+    <noscript>
+        <style>
+            .skip-link { position: static; }
+        </style>
+        <p style="text-align:center">JavaScript is disabled — some features may not work.</p>
+    </noscript>
+</body>
+</html>
